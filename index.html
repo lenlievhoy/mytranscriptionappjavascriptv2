@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcription Web App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="media-container">
+        <!-- Default audio player -->
+        <audio id="media-player" controls style="display: block;"></audio>
+        <!-- Video player will be inserted here when a video is imported -->
+    </div>
+    <input type="file" id="file-input" style="display: none;">
+    
+    <div style="margin-top: 5px; margin-bottom: 5px;">
+    <div id="button-container">
+        <button id="import-btn">Choose Audio/Video</button>
+        <button id="play-pause-btn" title="Alt+C or Esc">Play/Pause</button>
+        <button id="stop-btn" title="Stop">Stop</button>
+        <button id="skip-backward-btn" title="Alt+Z">Skip Backwards</button>
+    </div>
+    <!-- Add the new text area and button -->
+    <div style="margin-top: 10px;">
+        <input type="text" id="go-to-input" placeholder="Enter time code (HH:MM:SS)">
+        <button id="go-to-btn">Go To</button>
+    </div>
+    </div>
+
+    <!-- Add the text area below the buttons -->
+    <textarea id="notes" placeholder="Take notes..." style="width: 100%; height: 100px; resize: vertical;"></textarea>
+
+    <script src="script-1.js"></script>
+    
+</body>
+</html>

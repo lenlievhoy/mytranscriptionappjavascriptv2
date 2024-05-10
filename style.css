@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+#media-container {
+    margin: 20px auto;
+    width: 60%;
+}
+video, audio {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+#import-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Display button container as a flexbox with items in a row */
+#button-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px; /* Add some margin below the button container */
+}
+
+/* Style individual buttons */
+button {
+    margin-right: 10px; /* Add some margin between buttons */
+}
+
+#notes span.time-code {
+    cursor: pointer;
+}
